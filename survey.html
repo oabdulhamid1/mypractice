@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="overlay-color"></div>
+    <div id="hero">
+      <main>
+        <div id="title-div">
+          <h1 id="title">freeCodeCamp Survey Form</h1>
+          <p id="description">Thank you for taking the time to help us improve the platform </p>
+        </div>
+        <form action="#" id="survey-form">
+          <!-- input 1 -->
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          <!-- input 2 -->
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+          <!-- input 3 -->
+          <label for="number" id="number-label">Age <span>(optional)</span></label>
+          <input type="number" min="10" max="99" name="age" id="number" placeholder="Age">
+          <!-- input 4 -->
+          <label for="dropdown">Which option best describes your current role?</label>
+          <select class="" name="options1" id="dropdown" required>
+            <option value=""  disabled selected>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+          <!-- input 5 -->
+            <fieldset>
+              <legend>Would you recommend freeCodeCamp to a friend?</legend>
+              <div id="legend1"></div>
+              <div>
+                <input type="radio" name="radio" value="Definitely" id="Definitely">
+              <label for="Definitely">
+                Definitely
+              </label>
+              </div>
+              <div>
+                <input type="radio" name="radio" value="Maybe" id="Maybe">
+              <label for="Maybe">
+                Maybe
+              </label>
+              </div>
+              <div >
+                <input type="radio" name="radio" value="Not sure" id="Not_sure">
+              <label for="Not_sure">
+                Not sure
+              </label>
+              </div>
+            </fieldset>
+          <!-- input 6 -->
+          <label for="options2">What is your favorite feature of freeCodeCamp? </label>
+          <select name="options2" id="options2" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="Open Source">Open Source</option>
+          </select>
+          <!-- input 7 -->
+          <fieldset>
+                <legend>What would you like to see improved? (Check all that apply)</legend>
+                <div id="legend2"></div>
+                <!-- checkbox 1 -->
+                <div>
+                  <input type="checkbox" value="Front-end Projects" id="chk1">
+                  <label for="chk1">Front-end Projects</label>
+                </div>
+                <!-- checkbox 2 -->
+                <div>
+                  <input type="checkbox" value="Back-end Projects" id="chk2">
+                  <label for="chk2">Back-end Projects</label>
+                </div>
+                <!-- checkbox 3 -->
+                <div>
+                  <input type="checkbox" value="Data Visualization" id="chk3">
+                  <label for="chk3">Data Visualization</label>
+                </div>
+                <!-- checkbox 4 -->
+                <div>
+                  <input type="checkbox" value="Challenges" id="chk4">
+                  <label for="chk4">Challenges</label>
+                </div>
+                <!-- checkbox 5 -->
+                <div>
+                  <input type="checkbox" value="Open Source Community" id="chk5">
+                  <label for="chk5">Open Source Community</label>
+                </div>
+                <!-- checkbox 6 -->
+                <div>
+                  <input type="checkbox" value="Gitter help rooms" id="chk6">
+                  <label for="chk6">Gitter help rooms</label>
+                </div>
+                <!-- checkbox 7 -->
+                <div>
+                  <input type="checkbox" value="Videos" id="chk7">
+                  <label for="chk7">Videos</label>
+                </div>
+                <!-- checkbox 8 -->
+                <div>
+                  <input type="checkbox" value="City Meetups" id="chk8">
+                  <label for="chk8">City Meetups</label>
+                </div>
+                <!-- checkbox 9 -->
+                <div>
+                  <input type="checkbox" value="Wiki" id="chk9">
+                  <label for="chk9">Wiki</label>
+                </div>
+                <!-- checkbox 10 -->
+                <div>
+                  <input type="checkbox" value="Forum" id="chk10">
+                  <label for="chk10">Forum</label>
+                </div>
+                <!-- checkbox 11 -->
+                <div>
+                  <input type="checkbox" value="Additional Courses" id="chk11">
+                  <label for="chk11">Additional Courses</label>
+                </div>
+            </fieldset>
+                <!-- input 8 -->
+                <label for="textarea0" id="textarea-label">Any comments or suggestions?</label>
+                <textarea id="textarea0" name="name" rows="7" cols="80" placeholder="Enter your comment here..."></textarea>
+                <!-- Button -->
+                <button type="submit" name="button" id="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
